@@ -1,0 +1,12 @@
+
+{{ define "title" }}
+	<h1>{{ .Site.Title }}</h1>
+	<h2>{{ .Page.Params.byline }}</h2>
+
+{{ end }}
+
+{{ define "main" }}
+	{{ .Content }}
+
+	{{ partial "contact.html" }}
+{{ end }}

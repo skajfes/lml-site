@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			{{ if .Page.Title }}
+				{{ .Page.Title }} &ndash; {{ .Site.Title }}
+			{{ else }}
+				{{ .Site.Title }}
+			{{ end }}
+		</title>
+
+		{{ $style := resources.Get "sass/main.scss" 
+					 | resources.ToCSS 
+					 | resources.Minify }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	</head>
+	<body>
+		<header>
+			<a href="/">
+				<img src="/logo.png" alt="{{ .Site.Title }}" />
+			</a>
+			{{ partial "menu.html" }}
+		</header>
+		<div id="content">
+			{{ block "title" .}}{{ end }}
+			{{ block "main" . }}{{ end }}
+		</div>
+		<footer>
+			{{ .Site.Params.footer.copy | markdownify }}
+		</footer>
+	</body>
+</html>

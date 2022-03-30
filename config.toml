@@ -1,0 +1,24 @@
+baseURL = "https://example.co"
+languageCode = "is-IS"
+title = "LML Lögmenn"
+assetDir = "assets"
+
+# Metadata
+[params]
+  author = "LML Lögmenn"
+  description = "LML lögmenn ehf. veita alhliða þjónustu á sviði löginnheimtu"
+
+[params.logo]
+  src = "resources/lml-logo-white.png"
+
+
+# Navigation section
+[params.nav]
+  home = "Home"
+  welcome = "Welcome"
+  contact = "Contact Us"
+
+# Footer section
+[params.footer]
+  copy = "2022 &copy; LML Lögmenn"
+
