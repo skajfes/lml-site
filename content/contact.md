@@ -7,7 +7,7 @@ _build:
 
 Smáratorgi 3, 12.hæð  
 201 Kópavogur  
-lml@lml.is  
+{{< cloakemail "lml@lml.is" >}}  
 s: 595 9080
 
 Opnunartímar: 9:00 - 16:00
