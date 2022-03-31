@@ -1,7 +1,11 @@
 ---
 title: Gjaldskrá LML Lögmanna
-menu: main
+linktitle: Gjaldskrá
+menu: 
+  main: 
+    weight: 2
 ---
+
 
 Lögum samkvæmt ber að innheimta virðisaukaskatt af þjónustu lögmanna. Því leggst virðisaukaskattur á alla gjaldaliði í gjaldskránni.
 
@@ -10,7 +14,6 @@ Lögum samkvæmt ber að innheimta virðisaukaskatt af þjónustu lögmanna. Þv
 Gjaldskrá þessi gildir frá útgáfudagsetningu og getur breyst án fyrirvara.
 
 1. gr. Innheimtuþóknun
-
 	1. Í málum þar sem send eru út löginnheimtubréf er greitt fast gjald að viðbættu hlutfalli af höfuðstól.
 
 		Grunngjald innheimtuþóknunar er kr. 8.900 að viðbættum:

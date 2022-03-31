@@ -13,7 +13,7 @@ $background-dark: #212529;
 body {
   margin: 0;
   font-family: $font-family;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: $text-color;
 }
@@ -112,6 +112,7 @@ body {
     &:not(.show){
       opacity: 0;
       height: 0;
+	  overflow: hidden;
     }
   }
 
@@ -223,7 +224,7 @@ body {
 
 /* Heading */
 header.masthead {
-  padding: 7rem 0 3rem 0;
+  padding: 8rem 0 3rem 0;
   text-align: center;
   color: #fff;
   background: $background-dark;
@@ -233,7 +234,6 @@ header.masthead {
     font-size: 3.25rem;
     line-height: 3.25rem;
     font-weight: 700;
-    text-transform: uppercase;
     font-family: $font-family-headings;
   }
 
@@ -257,8 +257,8 @@ header.masthead {
 @media screen and (min-width: 768px) {
   header.masthead {
     .masthead-heading {
-      font-size: 4.5rem;
-      line-height: 4.5rem;
+      font-size: 4.0rem;
+      line-height: 4.0rem;
     }
   }
 }
@@ -341,10 +341,17 @@ h6 {
 }
 
 // ordered list style in pricing
-ol ol {
-	list-style: lower-latin;
+ol {
+	p {
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+	}
 
 	ol {
-		list-style: lower-roman;
+		list-style: lower-latin;
+
+		ol {
+			list-style: lower-roman;
+		}
 	}
 }

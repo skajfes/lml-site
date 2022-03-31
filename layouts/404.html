@@ -1,0 +1,21 @@
+
+{{ define "title" }}
+	<header class="masthead landing-page">
+		<div class="container">
+			<h1 class="masthead-heading">Page not found</h1>
+		</div>
+	</header>
+{{ end }}
+
+{{ define "main" }}
+	<section>
+		<div class="container text-center">
+			<p>
+				The requested page was not found.
+			</p>
+			<p>
+			Go back to the <a href="{{ .Site.Home.RelPermalink }}">homepage</a> and start over!
+			</p>
+		</div>
+	</section>
+{{ end }}

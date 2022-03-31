@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-	<head>
+	<head> 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>{{ if .Page.Title }}{{- .Page.Title }} &ndash; {{- .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+		<title>{{ if .Page.Title }}{{- .Page.Title }} &ndash; {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+		<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 		<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
 
 		{{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}

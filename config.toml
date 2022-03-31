@@ -1,15 +1,19 @@
-baseURL = "https://example.co"
+baseURL = "https://lml.is"
 languageCode = "is-IS"
 title = "LML Lögmenn"
-assetDir = "assets"
 
-# Metadata
+disableKinds = ["RSS"]
+
 [params]
   author = "LML Lögmenn"
   description = "LML lögmenn ehf. veita alhliða þjónustu á sviði löginnheimtu"
   logo = "/logo.png"
   favicon = "/favicon.png"
 
-
-
+[menu]
+[[menu.main]]
+	identifier = "contact"
+	name = "Hafðu samband"
+	url = "/#contact"
+	weight = 2
 
