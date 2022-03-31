@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}">
 	<head>
 		<meta charset="utf-8">
-		<title>
-			{{ if .Page.Title }}
-				{{ .Page.Title }} &ndash; {{ .Site.Title }}
-			{{ else }}
-				{{ .Site.Title }}
-			{{ end }}
-		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{{ if .Page.Title }}{{- .Page.Title }} &ndash; {{- .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+		<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
 
-		{{ $style := resources.Get "sass/main.scss" 
-					 | resources.ToCSS 
-					 | resources.Minify }}
+		{{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-		<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
+		{{ $script := resources.Get "main.js" | resources.Minify }}
+		<script defer type="text/javascript" src="{{ $script.RelPermalink }}"></script>
 	</head>
 	<body>
-		<header>
-			<a href="{{ .Site.Home.RelPermalink }}">
-				<img src="{{ .Site.Params.logo | relURL }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-			</a>
-			{{ partial "menu.html" . }}
-		</header>
-		<div id="content">
-			{{ block "title" .}}{{ end }}
-			{{ block "main" . }}{{ end }}
-		</div>
+		<nav class="navbar" id="mainNav">
+			<div class="container">
+				<div class="nav-container">
+					<a href="{{ .Site.Home.RelPermalink }}" class="navbar-brand">
+						<img src="{{ .Site.Params.logo | relURL }}" alt="{{ $.Site.Title }}" />
+					</a>
+					<button class="navbar-toggler" type="button" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-menu" aria-hidden="true">
+							<i class="line1"></i>
+							<i class="line2"></i>
+							<i class="line3"></i>
+						</span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav">
+							{{- range .Site.Menus.main -}}
+								<li>
+									<a href="{{ .URL }}" class="nav-link">
+										{{- .Name -}}
+									</a>
+								</li>
+							{{- end -}}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</nav>
+		{{ block "title" . }}{{ end }}
+		{{ block "main" . }}{{ end }}
 		{{ partial "footer.html" . }}
 	</body>
 </html>

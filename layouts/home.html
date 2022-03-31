@@ -1,12 +1,22 @@
 
 {{ define "title" }}
-	<h1>{{ .Site.Title }}</h1>
-	<h2>{{ .Page.Params.byline }}</h2>
-
+	<header class="masthead landing-page">
+		<div class="container">
+			<h1 class="masthead-heading">{{ .Site.Title }}</h1>
+			<h2 class="masthead-subheading">{{ .Page.Params.byline }}</h2>
+		</div>
+	</header>
 {{ end }}
 
 {{ define "main" }}
-	{{ .Content }}
-
-	{{ partial "contact.html" }}
+	<section>
+		<div class="container text-center">
+			{{ .Content }}
+		</div>
+	</section>
+	{{ with site.GetPage "contact" }}
+		<section class="bg-light" id="contact">
+			{{ .Content }}
+		</section>
+	{{ end }}
 {{ end }}

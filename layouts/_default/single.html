@@ -1,10 +1,16 @@
 
 {{ define "title" }}
-	<h1>
-		{{ .Page.Title }}
-	</h1>
+	<header class="masthead">
+		<div class="container">
+			<h1 class="masthead-heading">{{ .Site.Title }}</h1>
+		</div>
+	</header>
 {{ end }}
 
 {{ define "main" }}
-	{{ .Content }}
-{{end }}
+	<section>
+		<div class="container">
+			{{ .Content }}
+		</div>
+	</section>
+{{ end }}
