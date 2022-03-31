@@ -7,9 +7,8 @@ assetDir = "assets"
 [params]
   author = "LML Lögmenn"
   description = "LML lögmenn ehf. veita alhliða þjónustu á sviði löginnheimtu"
-
-[params.logo]
-  src = "resources/lml-logo-white.png"
+  logo = "/logo.png"
+  favicon = "/favicon.png"
 
 
 # Navigation section

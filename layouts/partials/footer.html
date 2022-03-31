@@ -1,7 +1,8 @@
 
-<nav>
+<footer>
+	{{ .Site.Params.footer.copy | markdownify }}
 	<ul>
-		{{ range .Site.Menus.main }}
+		{{ range .Site.Menus.footer }}
 			<li>
 				<a href="{{ .URL }}">
 					{{ .Pre }}
@@ -10,4 +11,4 @@
 			</li>
 		{{ end }}
 	</ul>
-</nav>
+</footer>

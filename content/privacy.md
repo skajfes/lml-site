@@ -1,5 +1,6 @@
 ---
 title: Persónuverndarstefna
+menu: footer
 ---
 
 LML Lögmenn leggja ríka áherslu á að tryggja og virða réttindi einstaklinga við meðferð og vinnslu persónuupplýsinga. Félagið er löginnheimtufyrirtæki og telst vera ábyrgðaraðili vegna vinnslu þeirra persónuupplýsinga sem félaginu er afhent af kröfuhöfum. Því byggir vinnslan á lögmætum hagsmunum í samræmi við 6. tl. 9. gr. laga um persónuvernd og vinnslu persónuupplýsinga nr. 90/2018.

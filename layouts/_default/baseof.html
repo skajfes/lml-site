@@ -14,20 +14,20 @@
 					 | resources.ToCSS 
 					 | resources.Minify }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+		<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
 	</head>
 	<body>
 		<header>
-			<a href="/">
-				<img src="/logo.png" alt="{{ .Site.Title }}" />
+			<a href="{{ .Site.Home.RelPermalink }}">
+				<img src="{{ .Site.Params.logo | relURL }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
 			</a>
-			{{ partial "menu.html" }}
+			{{ partial "menu.html" . }}
 		</header>
 		<div id="content">
 			{{ block "title" .}}{{ end }}
 			{{ block "main" . }}{{ end }}
 		</div>
-		<footer>
-			{{ .Site.Params.footer.copy | markdownify }}
-		</footer>
+		{{ partial "footer.html" . }}
 	</body>
 </html>

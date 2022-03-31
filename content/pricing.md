@@ -1,5 +1,6 @@
 ---
 title: Gjaldskrá LML Lögmanna
+menu: main
 ---
 
 Lögum samkvæmt ber að innheimta virðisaukaskatt af þjónustu lögmanna. Því leggst virðisaukaskattur á alla gjaldaliði í gjaldskránni.
