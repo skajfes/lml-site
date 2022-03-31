@@ -1,16 +1,15 @@
 
 <footer>
 	<div class="container">
-		{{ .Site.Params.footer.copy | markdownify }}
-		<ul>
-			{{ range .Site.Menus.footer }}
-				<li>
-					<a href="{{ .URL }}">
-						{{ .Pre }}
-						<span>{{ .Name }}</span>
-					</a>
-				</li>
-			{{ end }}
-		</ul>
+		<div class="row text-center">
+			<div class="col text-lg-start">
+				{{ now.Year }} &copy; {{ .Site.Title }}
+			</div>
+			<div class="col text-lg-end">
+				{{ range .Site.Menus.footer }}
+					<a href="{{ .URL }}">{{ .Name }}</a>
+				{{ end }}
+			</div>
+		</div>
 	</div>
 </footer>

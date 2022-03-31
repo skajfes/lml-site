@@ -16,7 +16,10 @@
 	</section>
 	{{ with site.GetPage "contact" }}
 		<section class="bg-light" id="contact">
-			{{ .Content }}
+			<div class="container text-center">
+				<h4>{{ .Title }}</h4>
+				{{ .Content }}
+			</div>
 		</section>
 	{{ end }}
 {{ end }}

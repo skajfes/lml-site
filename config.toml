@@ -11,13 +11,5 @@ assetDir = "assets"
   favicon = "/favicon.png"
 
 
-# Navigation section
-[params.nav]
-  home = "Home"
-  welcome = "Welcome"
-  contact = "Contact Us"
 
-# Footer section
-[params.footer]
-  copy = "2022 &copy; LML Lögmenn"
 
