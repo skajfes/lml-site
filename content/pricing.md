@@ -41,6 +41,7 @@ Gjaldskrá þessi gildir frá útgáfudagsetningu og getur breyst án fyrirvara.
 	1. Fyrir ritun beiðna svo sem beiðni um aðför, nauðungarsölu, afturkallanir, gjaldþrotaskiptabeiðnir og frestun greiðast kr. 12.500
 	1. Fyrir frestun án mætingar greiðast kr. 5.000
 	1. Fyrir ritun greiðsluáskorunar eða kröfulýsingar greiðast kr. 12.500
+	1. Ritun riftunarskeytis kr. 12.500
 	1. Fyrir ritun réttarsáttar greiðast kr. 12.500
 	1. Fyrir áminningarbréf greiðast kr. 950
 	1. Fyrir hvert mót hjá sýslumanni og í héraðsdómi greiðast kr. 12.500
