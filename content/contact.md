@@ -5,7 +5,7 @@ _build:
   render: never
 ---
 
-Smáratorgi 3 
+Smáratorgi 3  
 201 Kópavogur  
 {{< cloakemail "lml@lml.is" >}}  
 s: 595 9080
